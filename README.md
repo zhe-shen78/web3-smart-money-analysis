@@ -24,15 +24,15 @@
 
 ### 1) 总览 KPI（先看全局）
 
-![总览 KPI](Image%20display%201.png)
+![总览 KPI](assets/dashboard/Image%20display%201.png)
 
 ### 2) 候选池趋势与地址画像（再看过程）
 
-![趋势与画像](Image%20display%202.png)
+![趋势与画像](assets/dashboard/Image%20display%202.png)
 
 ### 3) 成本与分层结果（最后看结论）
 
-![成本与分层](Image%20display%203.png)
+![成本与分层](assets/dashboard/Image%20display%203.png)
 
 ## 项目亮点
 
@@ -50,8 +50,8 @@
 
 - Dashboard：<https://dune.com/wudide/smart-money-fet-rndr-pnl>
 - SQL：
-  - `sql/D3_candidate_pool_fet_eth_rndr_sol.sql`
-  - `sql/D4_cost_basis_fet_eth.sql`
-  - `sql/D4_cost_basis_validation_fet_eth_rndr_sol.sql`
-  - `sql/D5_pnl_snapshot_fet_eth.sql`
-- 项目长文档：`项目简介.md`
+  - [D3_candidate_pool_fet_eth_rndr_sol.sql](sql/D3_candidate_pool_fet_eth_rndr_sol.sql)
+  - [D4_cost_basis_fet_eth.sql](sql/D4_cost_basis_fet_eth.sql)
+  - [D4_cost_basis_validation_fet_eth_rndr_sol.sql](sql/D4_cost_basis_validation_fet_eth_rndr_sol.sql)
+  - [D5_pnl_snapshot_fet_eth.sql](sql/D5_pnl_snapshot_fet_eth.sql)
+- 项目长文档：[项目简介.md](项目简介.md)
