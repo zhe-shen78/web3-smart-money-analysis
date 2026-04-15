@@ -1,21 +1,57 @@
-# Hi there, I'm 危文哲 👋
+# Web3 智能资金行为分析（FET / RNDR）
 
-构建可解释的数据产品，持续发布项目与分析笔记。  
-目前关注 **Data Engineering / Analytics Engineering / Web3 On-chain Analytics**。
+<p align="left">
+  <img src="https://img.shields.io/badge/Track-AI%20Tokens-6C5CE7" alt="Track"/>
+  <img src="https://img.shields.io/badge/Chain-Ethereum%20%7C%20Solana-0984E3" alt="Chain"/>
+  <img src="https://img.shields.io/badge/Window-45%20Days-00B894" alt="Window"/>
+  <img src="https://img.shields.io/badge/Stack-DuneSQL-FDCB6E" alt="Stack"/>
+</p>
 
-## About
+> 识别高置信 Smart Money 候选地址，并把链上资金流转成可解释的风险信号。
 
-- 方向：SQL、Python、BI、链上数据分析。
-- 关注点：把复杂数据问题拆成清晰、可执行的分析任务。
-- 风格：重视可解释性与可复用性，偏向用项目沉淀方法。
+## 项目介绍
 
-## Featured Projects
+在 AI 代币波动较大的阶段，仅看价格通常不够。  
+这个项目通过 DuneSQL 对链上地址行为做结构化分析，核心目标是：
 
-| Project | What it does | Stack |
-| :--- | :--- | :--- |
-| **[web3-smart-money-analysis](https://github.com/zhe-shen78/web3-smart-money-analysis)** | 用 DuneSQL 分析 FET / RNDR 链上资金行为，识别 Smart Money 候选地址并输出风险信号。 | DuneSQL, SQL, On-chain Analytics |
-| **[Math-Modeling-2025](https://github.com/zhe-shen78/Math-Modeling-2025)** | 数学建模竞赛项目，围绕复杂系统进行建模、验证与结果解释。 | Python, Modeling |
+- 识别高置信 Smart Money 候选地址
+- 观察候选群体的资金变化和收益结构
+- 输出可读、可复盘的风险信号看板
 
-## Contact
+## 结果图示（建议阅读顺序）
 
-- Email: [zhes01689@gmail.com](mailto:zhes01689@gmail.com)
+- Dune Dashboard: [smart-money-fet-rndr-pnl](https://dune.com/wudide/smart-money-fet-rndr-pnl)
+
+### 1) 总览 KPI（先看全局）
+
+![总览 KPI](Image%20display%201.png)
+
+### 2) 候选池趋势与地址画像（再看过程）
+
+![趋势与画像](Image%20display%202.png)
+
+### 3) 成本与分层结果（最后看结论）
+
+![成本与分层](Image%20display%203.png)
+
+## 项目亮点
+
+- 双链统一口径：同一框架下观察 FET（Ethereum）与 RNDR（Solana）趋势。
+- 候选筛选可复现：通过规则组合筛选地址，而非手工挑选。
+- 结论可解释：从候选池到收益分层，指标之间有连续逻辑。
+
+## 如何阅读这个项目
+
+1. 先看上面的 3 张图，按“总览 -> 过程 -> 结论”快速理解项目输出。  
+2. 查看 Dashboard 交互版，确认指标与图表联动。  
+3. 按 `D3 -> D4 -> D5` 顺序阅读 SQL，再看完整说明文档。  
+
+## 快速跳转
+
+- Dashboard：<https://dune.com/wudide/smart-money-fet-rndr-pnl>
+- SQL：
+  - `sql/D3_candidate_pool_fet_eth_rndr_sol.sql`
+  - `sql/D4_cost_basis_fet_eth.sql`
+  - `sql/D4_cost_basis_validation_fet_eth_rndr_sol.sql`
+  - `sql/D5_pnl_snapshot_fet_eth.sql`
+- 项目长文档：`项目简介.md`
