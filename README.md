@@ -34,6 +34,12 @@
 
 ![成本与分层](assets/dashboard/Image%20display%203.png)
 
+## 技术内核 
+
+- **多维建模**：通过 `CTE` 链式调用，实现从基础转账到“每日净流 -> 累计持仓 -> 成本建模 -> PnL 快照”的完整数据降维与清洗。
+- **性能优化**：针对大数据量查询，利用 `approx_percentile` 替代精确分位数计算，并在 `Window Function` 中通过 `PARTITION BY` 优化分布式扫描范围。
+- **异构链标准化**：通过抽象 `params` 算子，实现 Ethereum (EVM) 与 Solana (SVM) 数据结构的口径统一，支持横向对比 AI 赛道跨链资金流向。
+
 ## 项目亮点
 
 - 双链统一口径：同一框架下观察 FET（Ethereum）与 RNDR（Solana）趋势。
